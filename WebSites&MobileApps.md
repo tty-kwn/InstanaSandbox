@@ -25,7 +25,7 @@ WebSitesモニタリングで送信される情報については、[こちら](
 
 ### WebSitesの問題判別
 1. **Summary**のページに戻ります。
-Applicatiosnのページと同様、エラーにフォーカスを当てて、詳細を確認します。
+Applicationsのページと同様、エラーにフォーカスを当てて、詳細を確認します。
 ![image](https://user-images.githubusercontent.com/22209835/114340607-ef76c180-9b92-11eb-8cf2-34c057a1b5df.png)
 1. ここでは、問題が一つだけのようですので、そこをクリックして、詳細画面を確認します。
 ![image](https://user-images.githubusercontent.com/22209835/114340638-fdc4dd80-9b92-11eb-86da-953437a86baf.png)
