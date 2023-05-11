@@ -8,7 +8,7 @@ Play with Instana を開くと、以下のような画面が表示されます�
 左のメニューにあるように Instanaでは、Infrastructure から、Platform、アプリケーション さらには Web Site & Mobile Apps (エンドユーザー・モニタリング）まで多様な環境を見ていくことが可能です。
 ![image](https://user-images.githubusercontent.com/22209835/114136972-7aaf4780-9946-11eb-8049-dd72def3e636.png)
 
-このサンドボック環境で IBM Instana Observability を、順に見ていきましょう。  
+このサンドボックス環境で IBM Instana Observability を、順に見ていきましょう。  
 まず 取得した各種メトリックが統合されている Infrastructure & Platform の足回りから見ていきます。  
 なお、このサンドボックス環境は実際にバックエンドで動いていて、擬似的に問題も発生させている環境ですので、開いたタイミングによって 表示される内容や発生するエラーは異なりますので、ご留意ください。
 
@@ -42,20 +42,20 @@ CPUやメモリの利用量から、Open Files数、File Systemの情報、ネ�
 ## Platform
 1. つぎにアプリケーションが稼働するプラットフォームを見ていきましょう。KubernetesやCloudFoundry、この環境には表示されていませんが vSphereや PowerVM の情報も見ていくことが可能です。
 ![image](https://user-images.githubusercontent.com/22209835/114139901-8f8dda00-994a-11eb-9b09-bde2f587499c.png)
-1. ひとつ定義されている public-demo-cluster が確認できます。右端のHealthはグリーンで大きな問題はないようですね。  
-public-demo-cluster のリンクをクリックして、見ていきましょう。
-![image](https://user-images.githubusercontent.com/22209835/114140147-dda2dd80-994a-11eb-9223-96d9965d9350.png)
+1. ひとつ定義されている hmadison-test が確認できます。右端のHealthはグリーンで大きな問題はないようですね。  
+hmadison-test のリンクをクリックして、見ていきましょう。
+![image](./image/ip1.png)
 
 1. 各クラスター全体のダッシュボードが開きます。  
 CPUやメモリーなどのリソース状況、利用状況上位のノードや名前空間のリストがあります。
-![image](https://user-images.githubusercontent.com/22209835/114326924-f80ad000-9b71-11eb-9e7c-ed8fcf86d5c1.png)
+![image](./image/ip2.png)
 1. 先程と同様、メニューの **Stack**をクリックすると、このクラスターに関係する アプリケーションやInfrastructure の情報がリストされて表示されます。
-![image](https://user-images.githubusercontent.com/22209835/114327073-7d8e8000-9b72-11eb-8b3b-c447edcb0f7e.png)
+![image](./image/ip3.png)
 1. Kubernetesの各種リソースがタブとして整理されていますので、確認してみてください。  
 とくに Pod のタブでは、リソースの Requests/Limitsの値をグラフィカルに表示することもできますので、どの名前空間のPodがリソースを消費する設定となっているかなど確認することができます。
-![image](https://user-images.githubusercontent.com/22209835/114327147-d1996480-9b72-11eb-9f7e-c222c07bba7d.png)
+![image](./image/ip4.png)
 1. 気になる Podがあれば、その Podの情報をクリックすることで、Podのダッシュボードに移動し、実際のリソース利用状況などを確認できます。
-![image](https://user-images.githubusercontent.com/22209835/114327227-23da8580-9b73-11eb-87eb-902bf9fe4d4b.png)
+![image](./image/ip5.png)
 
 ---
 【参考】  
